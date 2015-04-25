@@ -1,0 +1,40 @@
+{
+  "ProjectName": "AguaApp Hybrid",
+  "ProjectGuid": "2c867a63-bfbc-4c1d-acbf-67402fc12a72",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.AguaAppHybrid",
+  "DisplayName": "AguaApp Hybrid",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{b32c57c7-64ed-4a35-abd9-fccb10f7f366}",
+  "WP8ProductID": "{2da81ecd-0196-4f90-9271-ebaae9f83751}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.AguaAppHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
