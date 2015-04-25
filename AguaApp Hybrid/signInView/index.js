@@ -6,7 +6,7 @@ app.signInView = kendo.observable({});
         username: '',
         password: '',
         signin: function() {
-            var provider = app.data.defaultProvider;
+            var provider = app.data.aguaAppBackend;
             provider.Users.login(signInViewModel.username, signInViewModel.password,
                 function(data) {
                     if (data && data.result) {
