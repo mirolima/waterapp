@@ -3,7 +3,14 @@
 app.formView = kendo.observable({});
 (function(parent) {
     var formViewModel = kendo.observable({
-        fields: {},
+        fields: {
+            switchNotifications: '',
+            dateBirth: '',
+            tel2: '',
+            tel: '',
+            email: '',
+            username: '',
+        },
         submit: function() {},
         cancel: function() {}
     });

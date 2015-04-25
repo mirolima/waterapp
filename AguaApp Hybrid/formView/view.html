@@ -2,6 +2,36 @@
     <div id="formViewModel" class="form-view">
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Nome
+                        <input data-bind="value: formViewModel.fields.username" placeholder="Helvio Homem" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Email
+                        <input data-bind="value: formViewModel.fields.email" placeholder="example@example.com" type="email">
+                    </label>
+                </li>
+                <li>
+                    <label>Telefone
+                        <input data-bind="value: formViewModel.fields.tel" placeholder="+55 19 2222 2222" type="tel">
+                    </label>
+                </li>
+                <li>
+                    <label>Celular
+                        <input data-bind="value: formViewModel.fields.tel2" placeholder="+55 19 99999 9999" type="tel">
+                    </label>
+                </li>
+                <li>
+                    <label>Data de aniversário
+                        <input data-bind="value: formViewModel.fields.dateBirth" type="date">
+                    </label>
+                </li>
+                <li>
+                    <label>Receber notificações
+                        <input data-bind="value: formViewModel.fields.switchNotifications" data-role="switch">
+                    </label>
+                </li>
             </ul>
 
             <div class="button-group">

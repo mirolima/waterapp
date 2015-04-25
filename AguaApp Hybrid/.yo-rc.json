@@ -5,10 +5,13 @@
   "generator-kendo-ui-mobile": {
     "cleanup": [
       "./data/defaultProvider.js",
+      "./data/aguaAppBackend.js",
       "./home",
+      "./formView",
       "./signInView",
-      "./registerView",
-      "./formView"
+      "./aboutView",
+      "./dataListView",
+      "./dataListViewProd"
     ]
   }
 }
