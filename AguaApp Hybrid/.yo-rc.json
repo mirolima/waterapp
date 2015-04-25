@@ -9,9 +9,9 @@
       "./home",
       "./formView",
       "./signInView",
+      "./dataListViewProd",
       "./aboutView",
-      "./dataListView",
-      "./dataListViewProd"
+      "./dataListViewOrders"
     ]
   }
 }

@@ -91,6 +91,28 @@
     },
     {
       "type": "view",
+      "name": "dataListViewProd",
+      "title": "Buscar",
+      "addToNavigation": true,
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewProdModel",
+          "dataProvider": "aguaAppBackend",
+          "masterDetails": false,
+          "pullToRefresh": true,
+          "endlessScroll": true,
+          "iconField": true,
+          "subHeaderField": "Tipo",
+          "filterField": "Tamanho",
+          "collection": "Produtos",
+          "headerField": "Descricao"
+        }
+      ],
+      "icon": "search"
+    },
+    {
+      "type": "view",
       "name": "aboutView",
       "title": "Sobre",
       "addToNavigation": true,
@@ -114,45 +136,27 @@
     },
     {
       "type": "view",
-      "name": "dataListView",
-      "title": "Produtos",
+      "name": "dataListViewOrders",
+      "title": "Pedidos",
       "addToNavigation": true,
       "components": [
         {
           "type": "list",
-          "name": "dataListViewModel",
+          "name": "dataListViewOrdersModel",
           "dataProvider": "aguaAppBackend",
-          "masterDetails": false,
-          "pullToRefresh": true,
-          "endlessScroll": true,
-          "filterField": "Descricao",
-          "collection": "Produtos",
-          "headerField": "Tipo"
-        }
-      ],
-      "icon": "organize"
-    },
-    {
-      "type": "view",
-      "name": "dataListViewProd",
-      "title": "Buscar",
-      "addToNavigation": true,
-      "components": [
-        {
-          "type": "list",
-          "name": "dataListViewProdModel",
-          "dataProvider": "aguaAppBackend",
-          "masterDetails": false,
+          "masterDetails": true,
           "pullToRefresh": true,
           "endlessScroll": true,
           "iconField": true,
-          "subHeaderField": "Tipo",
-          "filterField": "Tamanho",
-          "collection": "Produtos",
-          "headerField": "Descricao"
+          "subHeaderField": "quantidade",
+          "detailHeaderField": "produtoId",
+          "detailSubHeaderField": "formaPagamento",
+          "detailDescriptionField": "agendamento",
+          "collection": "Pedidos",
+          "headerField": "statusPedido"
         }
       ],
-      "icon": "search"
+      "icon": "bookmarks"
     }
   ],
   "view": "home",
