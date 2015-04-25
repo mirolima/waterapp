@@ -1,13 +1,87 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "views": [
+    {
+      "type": "view",
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "components": [],
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "name": "signInView",
+      "title": "Sign In",
+      "addToNavigation": true,
+      "components": [
+        {
+          "type": "signin",
+          "name": "signInViewModel",
+          "dataProvider": "defaultProvider",
+          "usernameLabel": "Username",
+          "passwordLabel": "Password",
+          "confirmLabel": "Sign In",
+          "signinRedirect": "home",
+          "navigateToSignup": false,
+          "usernamePlaceholder": "",
+          "passwordPlaceholder": ""
+        }
+      ],
+      "icon": "contacts"
+    },
+    {
+      "type": "view",
+      "name": "registerView",
+      "title": "Register",
+      "addToNavigation": true,
+      "components": [
+        {
+          "type": "signup",
+          "name": "registerViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "usernameLabel": "Name",
+          "passwordLabel": "Password",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "navigateToSignin": false,
+          "emailPlaceholder": "",
+          "usernamePlaceholder": "",
+          "passwordPlaceholder": ""
+        }
+      ],
+      "icon": "edit"
+    },
+    {
+      "type": "view",
+      "name": "formView",
+      "title": "Profile",
+      "addToNavigation": true,
+      "components": [
+        {
+          "type": "form",
+          "name": "formViewModel",
+          "components": [],
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "icon": "bookmarks"
+    }
+  ],
+  "view": "home",
+  "skin": "flat",
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
       "everliveKey": "lJVuZnfh0fvTeFfL"
     }
-  ]
+  ],
+  "transition": "slide"
 }
